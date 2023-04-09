@@ -1,0 +1,51 @@
+﻿#Payment-Summary {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  
+  .Payment-Summary-List {
+    display: flex;
+    flex-direction: column;
+    
+    .Payment-Summary-Item {
+      display: flex; 
+      justify-content: space-between;
+      
+      .Summary-Item-Label {
+        font-weight: bold;
+      }
+      .Summary-Item-Quantity {
+        font-weight: normal;
+      }
+    }
+  }
+  
+  .Payment-Summary-Actions {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    
+    .Summary-Actions-Group {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 10px 0;
+      &.Pay-Order {
+        flex-direction: column;
+      }
+      .Summary-Action-Button {
+        border-radius: 6px;
+        padding: 8px 16px;
+        border: 1px solid #002E6E;
+        color: #002E6E;
+        cursor: pointer;
+        
+        &.Payment-Button {
+          background-color: #002E6E;
+          color: #ffffff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

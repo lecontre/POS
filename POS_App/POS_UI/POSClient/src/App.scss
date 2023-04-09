@@ -1,2 +1,16 @@
 #POS-Home {
+  
+  .Navigation-Layout,
+  .POS-Component-Layout {
+    float: left;
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
+  }
+  
+  .POS-Component-Layout {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+  }
 }

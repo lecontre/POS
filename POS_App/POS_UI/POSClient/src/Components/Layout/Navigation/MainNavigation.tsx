@@ -16,7 +16,7 @@ const MainNavigation: React.FC = () => {
     };
     
     return (
-        <>
+        <div className="Navigation-Layout">
             <div id="POS-Top-Navigation">
                 <div className="POS-Top-Navigation-Left">
                     <div className="Hamburger-Menu Action-Group" onClick={toggleLeftMenu}>
@@ -117,7 +117,7 @@ const MainNavigation: React.FC = () => {
                     </a>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

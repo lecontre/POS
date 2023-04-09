@@ -1,0 +1,97 @@
+﻿#POS-Top-Navigation {
+  background-color: #002E6E;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  height: 60px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  
+  .Action-Group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .POS-Top-Navigation-Left {
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    
+    .Hamburger-Menu {
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+  
+  .POS-Top-Navigation-Right {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    
+    .POS-Internet-Status {
+      .online {
+        color: green;
+      }
+      .offline {
+        color: red;
+      }
+    }
+  }
+}
+
+#POS-Drop-Navigation {
+  display: none;
+  padding: 25px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  
+  &.Show-Side-Menu {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #36474f;
+    color: #fff;
+  }
+  .Drop-Menu-Options {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    .Options-Item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 5px;
+      background-color: #ffffff;
+      border: 1px solid #d3d3d3;
+      border-radius: 6px;
+      color: #36474f;
+      cursor: pointer;
+      text-decoration: none;
+      width: 100%;
+      max-width: 235px;
+      
+      .Option-Icon {
+        font-size: 24px;
+      }
+      
+      .Options-Item-Label {
+        font-weight: bold;
+      }
+    }
+  }
+
+  
+}

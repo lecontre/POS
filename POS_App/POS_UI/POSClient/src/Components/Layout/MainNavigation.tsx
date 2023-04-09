@@ -1,6 +1,6 @@
 ﻿import React, {useState} from 'react';
 import "./MainNavigation.scss";
-import {FaBars, FaQuestionCircle, 
+import {FaBars,FaTimes, FaQuestionCircle, 
     FaStore, FaUserAlt, FaSyncAlt, 
     FaCircle, FaCashRegister, FaShoppingBasket,
     FaMoneyBillWave, FaClipboardList, FaCalendarAlt,
@@ -20,7 +20,7 @@ const MainNavigation: React.FC = () => {
             <div id="POS-Top-Navigation">
                 <div className="POS-Top-Navigation-Left">
                     <div className="Hamburger-Menu Action-Group" onClick={toggleLeftMenu}>
-                        <FaBars />
+                        {showMenu ? <FaTimes /> : <FaBars />}
                     </div>
                     <div className="POS-Cash-Register Action-Group">
                         <FaCashRegister />

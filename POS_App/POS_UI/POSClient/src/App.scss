@@ -12,5 +12,14 @@
     display: flex;
     justify-content: flex-start;
     padding: 20px;
+    
+    .POS-Component-Layout-Left {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 500px;
+    }
+    
   }
 }

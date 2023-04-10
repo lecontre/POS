@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import MainNavigation from "./Components/Layout/Navigation/MainNavigation";
 import PaymentSummary from "./Components/Layout/Payment/PaymentSummary";
+import CustomerDetails from "./Components/Layout/Customer/CustomerDetails";
 
 import './App.scss';
+
 
 
 
@@ -12,7 +14,10 @@ const App: React.FC = () => {
       <div id="POS-Home">
           <MainNavigation />
           <div className="POS-Component-Layout">
-              <PaymentSummary />
+              <div className="POS-Component-Layout-Left">
+                  <PaymentSummary />
+                  <CustomerDetails />
+              </div>
           </div>
       </div>
   );

@@ -29,9 +29,9 @@ const PaymentSummary: React.FC = () => {
             <div className="Payment-Summary-Actions">
                 <div className="Summary-Actions-Group Pay-Order">
                     <input className="Summary-Action-Button Payment-Button" type="button" value="$0.00 to PAY" />
+                    <input className="Summary-Action-Button Cancel-Button" type="button" value="Cancel Order" />
                 </div>
                 <div className="Summary-Actions-Group">
-                    <input className="Summary-Action-Button" type="button" value="Cancel Order" />
                     <input className="Summary-Action-Button" type="button" value="Park Order" />
                     <input className="Summary-Action-Button" type="button" value="Finish Order" />
                 </div>

@@ -1,0 +1,20 @@
+﻿#Product-Summary {
+  display: grid;
+  grid-template-columns: 40px 200px 50px 30px 30px 50px 40px 60px 10px;
+  column-gap: 0;
+  width: 100%;
+  box-shadow: 1px 2px 8px #aeacac;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.title-roll, .row {
+  display: contents;
+}
+
+.cell {
+  word-wrap: break-word;
+  padding: 0 0 0 0;
+}

@@ -11,6 +11,7 @@
   .POS-Component-Layout {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 20px;
     gap: 40px;
     
@@ -25,8 +26,8 @@
     .POS-Component-Layout-Right {
       display: flex;
       flex-direction: column;
+      flex-grow: 1;
       gap: 15px;
-      width: 100%;
     }
     
   }

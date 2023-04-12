@@ -20,6 +20,10 @@ const ProductSummary: React.FC = () => {
                 <ProductLineItem />
                 <ProductLineItem />
                 <ProductLineItem />
+                <ProductLineItem />
+                <ProductLineItem />
+                <ProductLineItem />
+                <ProductLineItem />
             </div>
         </div> 
     )

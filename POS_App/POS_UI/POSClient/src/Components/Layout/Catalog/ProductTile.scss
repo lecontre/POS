@@ -1,0 +1,60 @@
+﻿.Product-Tile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 160px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 12px;
+  gap: 8px;
+  text-align: center;
+  
+  .Product-Tile-Image {
+    width: 100%;
+    max-width: 100px;
+    align-self: center;
+  }
+  
+  .Product-Tile-Name {
+    font-size: 14px;
+  }
+  
+  .Product-Tile-Price {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .Product-Tile-Summary {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 0 5px 0;
+    
+    .Tile-Summary {
+      display: flex;
+      justify-content: space-between;
+      
+      .Summary-Label {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .Product-Tile-Info {
+    padding: 0 0 5px 0;
+
+    .Info-Button {
+      border-radius: 6px;
+      padding: 8px 16px;
+      border: 1px solid #002E6E;
+      background-color: #002E6E;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

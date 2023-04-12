@@ -4,6 +4,7 @@
   border: 1px solid #d0d0d0;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 12px;
   
   .Product-Summary-Header {
     display: flex;
@@ -18,7 +19,7 @@
     float: left;
     
     .Product-Summary-Column {
-      padding: 10px 25px;
+      padding: 10px 0;
       width: 100%;
       text-align: center;
     }
@@ -30,17 +31,24 @@
     clear: both;
     box-sizing: border-box;
     padding: 5px 0 10px 0;
+    max-height: 400px;
+    overflow-y: auto;
     
     .Product-Line-Item {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
+      border-bottom: 1px solid #dedede;
+      
+      &:last-of-type {
+        border-bottom: none;
+      }
     }
   }
 
   .Product-Summary-Column {
-    padding: 10px 25px;
+    padding: 10px 0;
     width: 100%;
     text-align: center;
     box-sizing: border-box;

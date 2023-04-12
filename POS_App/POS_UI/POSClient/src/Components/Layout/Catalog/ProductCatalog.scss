@@ -1,0 +1,31 @@
+﻿#Product-Catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  .Product-Catalog-Search {
+    width: 100%;
+    display: flex;
+    
+    #Catalog-Search-Scanner {
+      width: 100%;
+      border-radius: 4px;
+      padding: 15px;
+      border: 1px solid #d9d9d9;
+      box-shadow: 1px 2px 8px #aeacac;
+    }
+  }
+  
+  .Product-Catalog-Section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    box-shadow: 1px 2px 8px #aeacac;
+    border-radius: 4px;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+}
